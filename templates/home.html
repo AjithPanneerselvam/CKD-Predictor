@@ -1,11 +1,16 @@
-Sex<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
     <title> Diagnose Kidney failure </title>
 
 <!-- Compiled and minified CSS -->
-<link rel="stylesheet" href="/stylesheets/materialize.css">
+<!-- <link rel="stylesheet" href="/stylesheets/materialize.css"> -->
 <!--Import Google Icon Font-->
 <!-- <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -17,7 +22,7 @@ Sex<!DOCTYPE html>
       <!-- <ul class="left hide-on-med-and-down"> -->
       <!-- <li> <a href = "/"> <i class="material-icons"> toc </i> </a></li> -->
   <!-- </ul> -->
-    <center><a style="padding-right:100px; color: white" href="/" class="brand-logo">Diagnosis</a></center>
+    <center><a style="padding-right:200px; color: white" href="/" class="brand-logo">Diagnosis</a></center>
   </div>
 </nav>
 
@@ -28,59 +33,197 @@ Sex<!DOCTYPE html>
 
 
           <div style="padding-top:50"class="row">
-              <form action="/result" method="post" class="col s12">
+              <form action="http://localhost:5000/result" method="post" class="col s12">
 
                 <div class="row">
                   <div class="input-field col s6">
-                    <input id="accomadation" type="text" class="validate">
-                    <label for="accomadation">Accomadation Class</label>
+                      <input  name="age" type="text" class="validate">
+                     <label class ="active" for="age">Age</label>
                   </div>
                 </div>
 
                 <div class="row">
                   <div class="input-field col s6">
-                    <input id="Sex" type="text" class="validate">
-                    <label for="Sex">Sex</label>
+                    <input name="BloodPressure" type="text" class="validate">
+                    <label class ="active" for="BloodPressure">Blood Pressure</label>
                   </div>
                 </div>
 
-                <div class="row">
+                <!-- <div class="row">
                   <div class="input-field col s6">
-                    <input id="age" type="text" class="validate">
-                    <label for="age">Age</label>
+                      <label for="specificGravity">Specific Gravity</label>
+                    <input name="specificGravity" type="text" class="validate">
+
                   </div>
-                </div>
+                </div> -->
 
                 <div class="row">
                   <div class="input-field col s6">
-                    <input id="siblingSpouse" type="text" class="validate">
-                    <label for="siblingSpouse">SiblingSpouse</label>
+                      <label class ="active" for="albumin">Albumin</label>
+                    <input name="albumin" type="text" class="validate">
+
                   </div>
                 </div>
 
 
             <div class="row">
                  <div class="input-field col s6">
-                     <input id="parentChild" type="text" class="validate">
-                     <label for="parentChild">ParentChild</label>
+                     <label class ="active" for="sugar">Sugar</label>
+                     <input name="sugar" type="text" class="validate">
+
+                  </div>
+            </div>
+
+            <!-- <div class="row">
+                 <div class="input-field col s6">
+                     <label for="puscell">Puscell</label>
+                     <input name="puscell" type="text" class="validate">
+
+                  </div>
+            </div> -->
+
+            <!-- <div class="row">
+                 <div class="input-field col s6">
+                     <label for="clumps">Puscell Clumps</label>
+                     <input name="clumps" type="text" class="validate">
+
+                  </div>
+            </div> -->
+
+
+
+            <!-- <div class="row">
+                 <div class="input-field col s6">
+                     <label for="bacteria">Bacteria</label>
+                     <input name="bacteria" type="text" class="validate">
+
+                  </div>
+            </div> -->
+
+            <div class="row">
+                 <div class="input-field col s6">
+                     <label class ="active" for="bloodGlucose">Blood Glucose Random</label>
+                     <input name="bloodGlucose" type="text" class="validate">
+
+                  </div>
+            </div>
+
+
+
+            <div class="row">
+                 <div class="input-field col s6">
+                     <label class ="active" for="bloodUrea">Blood Urea</label>
+                     <input name="bloodUrea" type="text" class="validate">
+
+                  </div>
+            </div>
+
+            <!-- <div class="row">
+                 <div class="input-field col s6">
+                     <label for="serum">Serum Creatinine</label>
+                     <input name="serum" type="text" class="validate">
+
+                  </div>
+            </div> -->
+
+            <!-- <div class="row">
+                 <div class="input-field col s6">
+                      <label for="sodium">Sodium</label>
+                     <input name="sodium" type="text" class="validate">
+
+                  </div>
+            </div> -->
+
+            <!-- <div class="row">
+                 <div class="input-field col s6">
+                     <label for="potassium">Potassium</label>
+                     <input name="potassium" type="text" class="validate">
+
+                  </div>
+            </div> -->
+
+            <div class="row">
+                 <div class="input-field col s6 center">
+                     <label class ="active" for="haemoglobin">Haemoglobin</label>
+                     <input name="haemoglobin" type="text" class="validate">
+
                   </div>
             </div>
 
             <div class="row">
                  <div class="input-field col s6">
-                     <input id="fare" type="text" class="validate">
-                     <label for="fare">Fare</label>
+                     <label class ="active" for="packed">Packed Cell Volume</label>
+                     <input name="packed" type="text" class="validate">
+
                   </div>
             </div>
 
             <div class="row">
                  <div class="input-field col s6">
-                     <input id="embarked" type="text" class="validate">
-                     <label for="embarked">Embarked</label>
+                    <label class ="active" for="white">White Blood Cell Count</label>
+                     <input name="white" type="text" class="validate">
+
+                  </div>
+            </div>
+
+            <div class="row">
+                 <div class="input-field col s6">
+                     <label class ="active" for="red">Red Blood Cell Count</label>
+                     <input name="red" type="text" class="validate">
+
+                  </div>
+            </div>
+
+            <div class="row">
+                 <div class="input-field col s6">
+                     <label class ="active" for="hypertension">Hypertension</label>
+                     <input name="hypertension" type="text" class="validate">
+
+                  </div>
+            </div>
+
+            <!-- <div class="row">
+                 <div class="input-field col s6">
+                     <label for="diabetes">Diabetes</label>
+                     <input name="diabetes" type="text" class="validate">
+
+                  </div>
+            </div> -->
+
+            <!-- <div class="row">
+                 <div class="input-field col s6">
+                     <label for="coronary">Coronary Heartery Disease</label>
+                     <input name="coronary" type="text" class="validate">
+
+                  </div>
+            </div> -->
+
+            <div class="row">
+                 <div class="input-field col s6">
+                     <label class ="active" for="appetite">Appetite</label>
+                     <input name="appetite" type="text" class="validate">
+
+                  </div>
+            </div>
+
+            <!-- <div class="row">
+                 <div class="input-field col s6">
+                     <label for="pedalenema">Pedalenema</label>
+                     <input name="pedalenema" type="text" class="validate">
+
+                  </div>
+            </div> -->
+
+            <div class="row">
+                 <div class="input-field col s6">
+                     <label class ="active" for="anaemia">Anaemia</label>
+                     <input name="anaemia" type="text" class="validate">
+
                   </div>
             </div>
 
 
+            <!-- <p><input type = "submit" value = "submit" /></p> -->
 
             <div class="center">
                 <button class="btn waves-effect waves-light" type="submit" name="action">Submit
@@ -96,20 +239,9 @@ Sex<!DOCTYPE html>
 </div>
 </div>
 
-
-
-<!-- <div class="center" style="margin-top:30vh"><img class="center responsive-img" src="./images/search.png"></div> -->
-
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-
 <!-- Compiled and minified JavaScript -->
-<script src="/javascripts/materialize.js"></script>
-<script>
-$('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 15 // Creates a dropdown of 15 years to control year
-  });
- </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+
+
 </body>
 </html>
