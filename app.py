@@ -21,7 +21,7 @@ def azureMl(formList):
     body = str.encode(json.dumps(data))
 
     url = 'https://ussouthcentral.services.azureml.net/workspaces/4ad7b48daa0f4455bd1d812507c6edfe/services/7d25282d3b2a4326881597f8f1287b1a/execute?api-version=2.0&details=true'
-    api_key = 'vsAh/iiPb+UoYhw1Qh56jvHtsevczeUuTIIE70fBjRxv34ggRNJsjqbDAWXvWOkEf7FIFPvQ1VBWSGFH4tyvlw==' # Replace this with the API key for the web service
+    api_key = 'Paste yout API key here'
     headers = {'Content-Type':'application/json', 'Authorization':('Bearer '+ api_key)}
 
     req = urllib2.Request(url, body, headers)
